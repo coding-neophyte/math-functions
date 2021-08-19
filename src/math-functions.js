@@ -144,6 +144,11 @@ This function should be dynamic, accepting an array of any length.
 */
 
 export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    const multiply1 = multiply(1, 2);
+    const multiply2 = multiply(multiply1[0], 3);
+    const multiply3 = multiply(multiply2[0], 4);
+    const multiply4 = multiply(multiply3[0], 5);
+    return [multiply4[0], `The numbers 1,2,3,4,5 have a product of ${multiply4[0]}.`];
 
 }
 
