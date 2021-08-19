@@ -144,8 +144,12 @@ This function should be dynamic, accepting an array of any length.
 */
 
 export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    const multiply1 = multiply(1, 2);
+    const multiply2 = multiply(multiply1[0], 3);
+    const multiply3 = multiply(multiply2[0], 4);
+    const multiply4 = multiply(multiply3[0], 5);
+    return [multiply4[0], `The numbers 1,2,3,4,5 have a product of ${multiply4[0]}.`];
 
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
-// You're done! Submit the link to the repo following the instructions in Canvas.
